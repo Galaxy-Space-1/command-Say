@@ -1,0 +1,8 @@
+@bot.slash_command(description="Lass den Bot eine Nachricht senden")
+async def say(
+        ctx,
+        text: Option(str, "Der Text, den du senden möchtest"), # type: ignore
+        channel: Option(discord.TextChannel, "Der Channel, in den du die Nachricht senden möchtest") # type: ignore
+):
+    await channel.send(text)
+    await ctx.respond("Nachricht gesendet", ephemeral=True)
