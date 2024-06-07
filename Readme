@@ -1,0 +1,19 @@
+Installire Visual Studio Code / Pycord 
+# -----------------------------------------
+Öffne in Visual Studio Code ein Neuen Ordner und Erstelle dan ein fiel namens main.py
+dann öffnest du in der main.py das Terminal und gibst: pip install pycord ein und drückst Enter.
+
+Dann Gibst du das ein
+
+import discord 
+
+bot = discord.Bot()
+
+bot.run("Dein Bot Token")
+
+und schön hast du dein Bot Gestartet.
+
+# -----------------------------------------
+Bei Fragen im Discord Melden
+Discord: https://discord.gg/CzWGFCbmTm
+Discord NRW: https://discord.gg/nrwnetzwerk
