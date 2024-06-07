@@ -1,0 +1,16 @@
+intents = discord.Intents.default()
+
+bot = discord.Bot(
+    intents=intents,
+    debug_guilds=[1246440416631590922, 1195468198888362045]
+)
+
+
+@bot.event
+async def on_ready():
+    print(f"{bot.user} ist online")
+
+
+@bot.slash_command(description="Grüße einen User")
+async def hello(ctx, user: Option(discord.User, "Der User, den du grüßen möchtest")): # type: ignore
+    await ctx.respond(f"Hallo Wie geht es dir ? {user.mention}")
